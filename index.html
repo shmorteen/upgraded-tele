@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!---------->
+<link
+rel="stylesheet"
+href="formpage.css">
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Survey Form</h1>
+      <p id="description" class="description text-center">
+        Thank you for taking the time to fill this form
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="address-label" for="address">Address</label>
+        <input
+          type="address"
+          name="address"
+          id="address"
+          class="form-control"
+          placeholder="Enter your Address"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>Employment Status?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="employed">Employed</option>
+          <option value="employed">Self Employed</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="retired">Retired</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Qualification?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current Qualification?</option>
+          <option value="First school leaveing certificate">First school leaveing certificate</option>
+          <option value="no-degree">No-Degree</option>
+          <option value="graduate">Graduate</option>
+          <option value="post-graduate">Post-Graduate</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Are you satisfied with this webpage?</p>
+        <label>
+          <input
+            name="yes"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+  
+        <label
+          ><input
+            name="no"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What would you like to see improved?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Aesthetics</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="fonts"
+            type="checkbox"
+            class="input-checkbox"
+          />Fonts</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="background-image"
+            type="checkbox"
+            class="input-checkbox"
+          />Background-image</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Labels"
+            type="checkbox"
+            class="input-checkbox"
+          />Labels</label
+          >
+      </div>
+  
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  
